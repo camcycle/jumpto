@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /jumpto/
+RewriteRule ^(index|add|remove).html$ index.html?action=$1 [L,QSA]
+RewriteRule ^([0-9a-zA-Z-]+)(/?)$ index.html?action=redirect&redirect=$1 [L]
+

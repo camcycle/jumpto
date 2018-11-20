@@ -1,0 +1,17 @@
+<?php
+
+# Define the settings
+$settings = array (
+	'username'		=> 'database_username',
+	'password'		=> 'database_password',
+	'hostname'		=> 'database_hostname',
+	'database'		=> 'jumpto',
+	'table'			=> 'jumpto',
+	'webmasterEmail'	=> 'webmaster@example.com',
+);
+
+# Load and run the jumpto system
+require_once ('jumpto.php');
+new jumpto ($settings);
+
+?>
